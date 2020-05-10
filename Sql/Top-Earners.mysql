@@ -1,0 +1,5 @@
+/*
+Working Platform:- MySQL
+*/
+
+SELECT MAX(MONTHS*SALARY), COUNT(*) FROM EMPLOYEE where (MONTHS*SALARY)=(select MAX(MONTHS*SALARY) from employee);
