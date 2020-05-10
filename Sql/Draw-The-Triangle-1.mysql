@@ -1,0 +1,13 @@
+/*
+Working Platform:- MySQL
+*/
+
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+
+SET @TEMP:= 20;
+SELECT REPEAT('* ',@TEMP:= @TEMP - 1)
+from INFORMATION_SCHEMA.TABLES;

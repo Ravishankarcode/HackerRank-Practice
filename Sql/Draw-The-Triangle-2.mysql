@@ -1,0 +1,15 @@
+/*
+Working Platform:- MySQL
+*/
+
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+
+SET @TEMP:= 0;
+SELECT REPEAT('* ',@TEMP:= @TEMP + 1)
+from INFORMATION_SCHEMA.TABLES
+where @TEMP < 20;
